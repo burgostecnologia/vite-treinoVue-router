@@ -13,7 +13,8 @@ const routes = [
     {path: '/about', component: About},
   //  {path: '/movie', component: Movie}
     {path: '/movie', component: () => import('./views/movie.vue')}, //assim só carrega quando acessar , + performatico
-    {path: '/servico', name: 'servico', component: () => import('./views/servico.vue')}
+    {path: '/servico', name: 'servico', component: () => import('./views/servico.vue')},
+    {path: '/usuarios/:id', name: 'usuarios', component: () => import('./views/usuarios.vue')}
 ]
 
 const router = createRouter({
