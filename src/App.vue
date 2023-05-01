@@ -6,7 +6,7 @@
       <router-link to="/">Home</router-link>&nbsp;
       <router-link to="/about">About</router-link>&nbsp;
       <router-link to="/movie">Movie</router-link>&nbsp;
-      <RouterLink :to="rotaDinamica">Serviço</RouterLink>&nbsp;
+      <RouterLink :to="rotaDinamica">Vendas</RouterLink>&nbsp;
       <router-link to="/usuarios/10">Usuarios</router-link>&nbsp;
     </nav>
     <RouterView></RouterView>
@@ -26,7 +26,7 @@
 export default{
   data () {
     return {
-      rotaDinamica: {name: 'servico'}
+      rotaDinamica: {name: 'venda'}
     }
   },
   

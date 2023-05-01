@@ -1,9 +1,14 @@
 <template>
-  <h1>Serviço</h1>
+<div>
+  <pre>{{produto.nome}}</pre>
+</div>
 </template>
 
 <script>
 export default {
+  props: {
+    produto: Object
+  },
 
 }
 </script>
